@@ -1,0 +1,31 @@
+numbers=(1,2,3,4,5)
+result=list(map(float,numbers))
+print(result)
+------------------
+university=[{'name':'rethu',
+             'city':'cbe'},
+            {'name':'sahana',
+             'city':'chennai'}]
+print(list(map(lambda x:x['name'],university)))
+-------------------
+def vowel(n):
+  letters=['a','e','i','o','u']
+  if(n.lower()in letters):
+    return True
+  else:
+    return False
+a=['I','i','e','R','W','t']
+print(list(filter(vowel,a)))
+--------------------------
+numbers=[-1,-4,-5,0,2,3,5,4,6,10]
+#odd
+odd=list(filter(lambda x: x%2,numbers))
+print("odd nos are",odd)
+
+#even
+even=list(filter(lambda x: x%2==0,numbers))
+print("even",even)
+
+#postitve
+positive=list(filter(lambda x:x>0,numbers))
+print("positive",positive)
