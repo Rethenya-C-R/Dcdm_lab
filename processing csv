@@ -1,0 +1,22 @@
+from google.colab import drive
+drive.mount('content/drive')
+
+cd/content/drive/My Drive
+
+import pandas as pd 
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+data=pd.read_csv("heart.csv")
+
+data.head()
+data.shape
+data.duplicated().sum()
+data.describe()
+data.info()
+data.columns
+data.nunique()
+data.isnull().sum()
+
+sns.histplot(x='Age',data=data)
+plt.show()
